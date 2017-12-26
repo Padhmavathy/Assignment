@@ -1,0 +1,86 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>TV</title>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /* Note: Try to remove the following lines to see the effect of CSS positioning */
+        .affix {
+            top: 0;
+            width: 100%;
+            z-index: 9999 !important;
+        }
+
+            .affix + .container-fluid {
+                padding-top: 70px;
+            }
+    </style>
+
+</head>
+<body>
+    <div> 
+        <div class="container-fluid" style="background-color:#F44336;color:#fff;height:200px;">
+            <h1>LED TV</h1>
+            <h3>All brands available</h3>
+
+        </div>
+
+        <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+            <ul class="nav navbar-nav">
+
+                <li><a href="@Url.Action("Index","Home")">Home</a></li>
+                <li><a href="@Url.Action("Product","Products")">Products</a></li>
+                <li><a href="@Url.Action("Service","Services")">Services</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <a href="~/T1.jpg" target="_blank">
+                            <img src="~/T1.jpg" alt="Lights" style="width:100%">
+                            <div class="caption">
+                                <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <a href="~/TV2.jpg" target="_blank">
+                            <img src="~/TV2.jpg" alt="Nature" style="width:100%">
+                            <div class="caption">
+                                <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <a href="~/t3.jpg" target="_blank">
+                            <img src="~/t3.jpg" alt="Fjords" style="width:100%">
+                            <div class="caption">
+                                <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
